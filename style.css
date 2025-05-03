@@ -1,7 +1,9 @@
 body {
     text-align: center;
     
-  background: linear-gradient(to bottom right, #f0f4fd, #dfe9f3);
+     
+     /* background-color: #f0f4fd; */
+     background-color: #dfe9f3;
   font-family: 'Arial', sans-serif;
   text-align: center;
   margin: 0;
