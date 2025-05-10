@@ -13,8 +13,11 @@ document.addEventListener('keypress', function () {
     if (started == false) {
         console.log("game started");
         started = true;
-  document.querySelector(".MaxScore").innerText = `Your Maximum Score `;      
-
+        document.querySelector(".MaxScore").innerText = `Your Maximum Score `;   
+         document.querySelector(
+           ".CurrentScore"
+        ).innerText = `Your Current Score `; 
+        
         levelUp();
     }
 })
@@ -69,6 +72,10 @@ function checkAns(idx) {
             maxScore = MaximumScore();
             
             document.querySelector('.MaxScore').innerHTML = `Your Maximum Score is : <b> ${maxScore}`;
+            document.querySelector(
+              ".CurrentScore"
+            ).innerHTML = `Your Current Score is : <b> ${currentScore}`;
+
             
             reset();
             
